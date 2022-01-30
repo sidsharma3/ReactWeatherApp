@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.landscape {
+    height: 100vh;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.weatherDataBox {
+    height: 60vh;
+    width: 40%;
+    z-index: 3;
+    overflow: hidden;
+    background-color: #3395b6;
+    margin: auto auto;
+    border-radius: 27px;
+    box-shadow: 15px 15px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.cityInputBox {
+    padding: 20px;
+}
+
+.cityInputBox input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.weatherData .textInfo {
+    margin: 15px 0 15px 0;
+    font-size: 30px;
+}
+
+.land {
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 100%;
+    border-radius: 30% 30% 0 0;
+    background-color: green;
+    border: 3px solid;
+}
+
+.sun {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 250px;
+    width: 250px;
+    line-height: 75px;
+    text-align: center;
+    background: orange;
+    border-bottom-left-radius: 100%;
+    border: 3px solid;
+}
+    
