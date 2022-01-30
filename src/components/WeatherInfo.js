@@ -23,6 +23,7 @@ const WeatherInfo = ({onEnter, weatherData}) => {
                             {`${weatherData.name}, ${weatherData.sys.country}`}
                         </h2>
                         <img 
+                            className="weatherIcon"
                             src={`https://openweathermap.org/img/wn/${weatherData.weather[0]["icon"]}@2x.png`}
                             alt="Weather Condition Icon"
                         />
