@@ -14,7 +14,7 @@ const Landscape = () => {
 
     useEffect( () => {
         const fetchApi = async() => {
-            const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=cdeef7a7790b26556c37e7d5880fd47e`
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=cdeef7a7790b26556c37e7d5880fd47e`
             const response = await fetch(url);
             const resJson = await response.json();
             localStorage.setItem("name", search);
